@@ -1,5 +1,5 @@
-
 import { Product, User, FilterOptions } from '@/types';
+import axios from 'axios';
 
 // For development purposes - would use an actual API endpoint in production
 const API_URL = 'https://api.example.com';
@@ -164,7 +164,25 @@ export const authAPI = {
     const userJson = localStorage.getItem('currentUser');
     if (!userJson) return null;
     return JSON.parse(userJson);
-  }
+  },
+
+  resetPassword: async (email: string) => {
+    try {
+      const response = await axios.post('/api/auth/reset-password', { email });
+      return response.data;
+    } catch (error) {
+      throw new Error(error.response?.data?.message || 'Failed to send reset password email');
+    }
+  },
+
+  confirmResetPassword: async (token: string, newPassword: string) => {
+    try {
+      const response = await axios.post('/api/auth/reset-password/confirm', { token, newPassword });
+      return response.data;
+    } catch (error) {
+      throw new Error(error.response?.data?.message || 'Failed to reset password');
+    }
+  },
 };
 
 // Products API

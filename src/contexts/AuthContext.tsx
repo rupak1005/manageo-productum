@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { User } from '@/types';
 import { authAPI } from '@/services/api';
@@ -20,10 +19,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const { toast } = useToast();
 
   useEffect(() => {
-    // Check if user is already logged in
-    const currentUser = authAPI.getCurrentUser();
-    setUser(currentUser);
-    setIsLoading(false);
+    const fetchCurrentUser = async () => {
+      try {
+        const currentUser = await authAPI.getCurrentUser();
+        setUser(currentUser);
+      } catch (error) {
+        console.error('Failed to fetch current user:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchCurrentUser();
   }, []);
 
   const login = async (email: string, password: string) => {

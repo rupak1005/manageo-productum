@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,6 +5,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { ThemeProvider } from "@/contexts/ThemeProvider";
+import LoginForm from '@/components/auth/LoginForm';
+import RegisterForm from '@/components/auth/RegisterForm';
+import ResetPasswordForm from '@/components/auth/ResetPasswordForm';
+import ConfirmResetPasswordForm from '@/components/auth/ConfirmResetPasswordForm';
 
 // Pages
 import HomePage from "./pages/HomePage";
@@ -29,8 +32,10 @@ const App = () => (
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/login" element={<LoginPage />} />
-              <Route path="/register" element={<RegisterPage />} />
+              <Route path="/login" element={<LoginForm />} />
+              <Route path="/register" element={<RegisterForm />} />
+              <Route path="/reset-password" element={<ResetPasswordForm />} />
+              <Route path="/reset-password/confirm/:token" element={<ConfirmResetPasswordForm />} />
               <Route path="/products" element={<ProductsPage />} />
               <Route path="/products/:id" element={<ProductDetailPage />} />
               <Route path="/products/new" element={<CreateProductPage />} />
