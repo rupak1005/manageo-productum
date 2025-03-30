@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -95,9 +94,15 @@ const LoginForm: React.FC = () => {
       <CardFooter className="flex justify-center">
         <p className="text-sm text-muted-foreground">
           Don't have an account?{' '}
-          <a href="/register" className="text-primary hover:underline">
+          <Link to="/register" className="text-primary hover:underline">
             Sign up
-          </a>
+          </Link>
+        </p>
+        <p className="text-sm text-muted-foreground">
+          Forgot your password?{' '}
+          <Link to="/reset-password" className="text-primary hover:underline">
+            Reset it
+          </Link>
         </p>
       </CardFooter>
     </Card>
