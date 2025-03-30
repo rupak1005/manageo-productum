@@ -1,69 +1,118 @@
-# Welcome to your Lovable project
+# Product Manager Application
 
-## Project info
+A modern web application for managing product catalogs, built with React, TypeScript, and shadcn/ui components.
 
-**URL**: https://lovable.dev/projects/351929e6-da5f-4180-9092-955df1c61949
 
-## How can I edit this code?
 
-There are several ways of editing your application.
+## 🌐 Live Demo
 
-**Use Lovable**
+Check out the live demo: [Product Manager App](https://ubiquitous-youtiao-65cd45.netlify.app/)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/351929e6-da5f-4180-9092-955df1c61949) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Features
 
-**Use your preferred IDE**
+- 🔐 User Authentication (Login/Register)
+- 📦 Product Management (CRUD operations)
+- 🌃 Dark/Light Theme Support
+- 📱 Responsive Design
+- 🎨 Modern UI with shadcn/ui Components
+- 🔍 Product Search and Filtering
+- 📊 Product Categories
+- ⚡ Fast Performance with Vite
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+- [Zod](https://zod.dev/) for form validation
+- [Lucide Icons](https://lucide.dev/)
 
-Follow these steps:
+## 🛆 Functional Requirements
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 1. User Authentication (JWT-based)
+- User Signup (email, password)
+- User Login (returns JWT token)
+- Logout functionality
+- Protect product routes using JWT
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 2. Product Management
+- Create Product (name, description, category, price, rating)
+- View all products
+- Update product
+- Delete product
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 3. Product Filtering & Search
+- Filter products by category, price range, or rating
+- Search products by name or description
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🎨 Frontend (React.js)
+- Use React (with functional components and hooks)
+- Integrate with the backend
+- Show product list in a table/grid format
+- Include forms for Login, Signup, Create, and Update
+- Implement JWT token storage and protected routes
+- Use any UI library like Tailwind, MUI, or Bootstrap (optional)
 
-**Edit a file directly in GitHub**
+## 🔧 Backend Stack 
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+###  Node.js (NestJS Framework Preferred)**
+- Language: TypeScript
+- Framework: NestJS
+- Database: MongoDB or PostgreSQL
+- ORM: TypeORM / Prisma
+  
 
-**Use GitHub Codespaces**
+## 📦 Installation
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rupak1005/manageo-productum.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd manageo-productum
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## What technologies are used for this project?
+## 🚪 Usage
 
-This project is built with .
+1. Start the development server:
+   ```bash
+   npm run dev
+   ```
+2. Open your browser and navigate to:
+   ```
+   http://localhost:5173
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 💪 Contributing
 
-## How can I deploy this project?
+Contributions are welcome! To contribute:
 
-Simply open [Lovable](https://lovable.dev/projects/351929e6-da5f-4180-9092-955df1c61949) and click on Share -> Publish.
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add some feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a Pull Request.
 
-## I want to use a custom domain - is that possible?
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 🏆 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
