@@ -171,7 +171,8 @@ export const authAPI = {
       const response = await axios.post('/api/auth/reset-password', { email });
       return response.data;
     } catch (error) {
-      throw new Error(error.response?.data?.message || 'Failed to send reset password email');
+      const errorMessage = error.response?.data?.message || 'Failed to send reset password email';
+      throw new Error(errorMessage);
     }
   },
 
@@ -180,7 +181,8 @@ export const authAPI = {
       const response = await axios.post('/api/auth/reset-password/confirm', { token, newPassword });
       return response.data;
     } catch (error) {
-      throw new Error(error.response?.data?.message || 'Failed to reset password');
+      const errorMessage = error.response?.data?.message || 'Failed to reset password';
+      throw new Error(errorMessage);
     }
   },
 };

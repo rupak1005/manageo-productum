@@ -51,7 +51,7 @@ const ResetPasswordForm: React.FC = () => {
       toast({
         variant: "destructive",
         title: "Reset Failed",
-        description: error instanceof Error ? error.message : "An unknown error occurred",
+        description: error.message,
       });
     }
   };

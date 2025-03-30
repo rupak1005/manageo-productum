@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
@@ -17,8 +16,8 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-background border-b border-border p-4 shadow-sm">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2">
+      <div className="max-w-7xl mx-auto flex justify-between items-center flex-wrap">
+        <Link to="/" className="flex items-center gap-2 mb-2 md:mb-0">
           <Package className="w-6 h-6 text-brand-600" />
           <span className="text-xl font-semibold text-foreground">ProductManager</span>
         </Link>
