@@ -6,7 +6,7 @@ A modern web application for managing product catalogs, built with React, TypeSc
 
 ## 🌐 Live Demo
 
-Check out the live demo: [Product Manager App](manageo-productum.netlify.app)
+Check out the live demo: [Product Manager App](https://manageo-productum.netlify.app/)
 
 
 ## 🚀 Features
