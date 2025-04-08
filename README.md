@@ -4,23 +4,23 @@ A modern web application for managing product catalogs, built with React, TypeSc
 
 
 
-## 🌐 Live Demo
+##  Live Demo
 
 Check out the live demo: [Product Manager App](https://manageo-productum.netlify.app/)
 
 
-## 🚀 Features
+##  Features
 
-- 🔐 User Authentication (Login/Register)
-- 📦 Product Management (CRUD operations)
-- 🌃 Dark/Light Theme Support
-- 📱 Responsive Design
-- 🎨 Modern UI with shadcn/ui Components
-- 🔍 Product Search and Filtering
-- 📊 Product Categories
-- ⚡ Fast Performance with Vite
+-  User Authentication (Login/Register)
+-  Product Management (CRUD operations)
+-  Dark/Light Theme Support
+-  Responsive Design
+-  Modern UI with shadcn/ui Components
+-  Product Search and Filtering
+-  Product Categories
+   Fast Performance with Vite
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -31,7 +31,7 @@ Check out the live demo: [Product Manager App](https://manageo-productum.netlify
 - [Zod](https://zod.dev/) for form validation
 - [Lucide Icons](https://lucide.dev/)
 
-## 🛆 Functional Requirements
+##  Functional Requirements
 
 ### 1. User Authentication (JWT-based)
 - User Signup (email, password)
@@ -49,7 +49,7 @@ Check out the live demo: [Product Manager App](https://manageo-productum.netlify
 - Filter products by category, price range, or rating
 - Search products by name or description
 
-## 🎨 Frontend (React.js)
+##  Frontend (React.js)
 - Use React (with functional components and hooks)
 - Integrate with the backend
 - Show product list in a table/grid format
@@ -57,7 +57,7 @@ Check out the live demo: [Product Manager App](https://manageo-productum.netlify
 - Implement JWT token storage and protected routes
 - Use any UI library like Tailwind, MUI, or Bootstrap (optional)
 
-## 🔧 Backend Stack 
+##  Backend Stack 
 
 ###  Node.js (NestJS Framework Preferred)**
 - Language: TypeScript
@@ -66,7 +66,7 @@ Check out the live demo: [Product Manager App](https://manageo-productum.netlify
 - ORM: TypeORM / Prisma
   
 
-## 📦 Installation
+##  Installation
 
 1. Clone the repository:
    ```bash
@@ -80,8 +80,7 @@ Check out the live demo: [Product Manager App](https://manageo-productum.netlify
    ```bash
    npm install
    ```
-
-## 🚪 Usage
+##  Usage
 
 1. Start the development server:
    ```bash
@@ -92,7 +91,7 @@ Check out the live demo: [Product Manager App](https://manageo-productum.netlify
    http://localhost:5173
    ```
 
-## 💪 Contributing
+##  Contributing
 
 Contributions are welcome! To contribute:
 
